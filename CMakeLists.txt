@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_LIST_DIR}/cmake/Modules")
-project(SOEM
+project(soem
     DESCRIPTION "Simple Open EtherCAT Master"
     VERSION 1.4.0
     LANGUAGES C)
@@ -111,3 +111,6 @@ if(BUILD_TESTS)
   add_subdirectory(test/linux/eepromtool)
   add_subdirectory(test/linux/simple_test)
 endif()
+
+find_package(ament_cmake REQUIRED)
+ament_package()
