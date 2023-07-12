@@ -113,4 +113,5 @@ if(BUILD_TESTS)
 endif()
 
 find_package(ament_cmake REQUIRED)
+ament_export_include_directories(include)
 ament_package()
